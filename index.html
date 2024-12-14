@@ -1,0 +1,142 @@
+<!DOCTYPE html> <!-- Documento tipo HTML 5 -->
+<html lang="pt-BR"> <!-- idioma -->
+<head> <!-- onde fica o conteudo que não aparecer na página -->
+    <meta charset="UTF-8"> <!-- os tipos de caracteres que podem ser usados -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- serve para adaptar a página para vários tamanhos de tela -->
+    <title>Primeiros passos com HTML</title> <!-- titulo da Página -->
+</head> <!-- Onde fica o conteudo que aparece na página -->
+<body>
+    
+    <h1 id="inicio">Primeiros passos com HTML</h1><!-- Titulo. tem como título o h1,h2,h3,h4,h5,h6 -->
+    <hr>
+    <ul>
+        <li><a href="#paragrafo">Paragrafo</a></li>
+        <li><a href="#lista-nao-ordenada">Lista não ordenada</a></li>
+        <li><a href="#lista-ordenada">Lista ordenada</a></li>
+        <li><a href="#imagen">Imagens</a></li>
+        <li><a href="#link">Links</a></li>
+        <li><a href="tabela">Tabelas</a></li>
+    </ul>
+
+    <h2 id="para">Paragrafo</h2>
+    <small><a href="#inicio">voltar</a></small>
+    <br>
+
+    <p>Quando escreve "Lorem" aparece um paragrafo</p>
+    <p>
+        Ex.: Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Expedita quaerat in eos laboriosam nihil consequatur magnam ducimus iusto voluptas accusantium dolore, 
+        explicabo nisi molestiae quam tenetur debitis voluptatem tempora praesentium?
+    </p> <!-- Paragrafo -->
+
+    <hr><!-- Linha horisontal -->
+
+    <p>
+        Texto em negrito <b>Fisico</b> e <strong>Semantico</strong>. <!-- Priosrisar sempre o semantico -->
+        <br><!-- quebrar linha -->
+        Texto em <i>Itálico(fisico)</i> e <em>Enfase(semantico)</em>.
+        <br>
+        Texto em <u>underline</u>
+        <br>
+        Texto <strike>errado</strike>
+    </p>
+
+    <hr>
+    <h2 id="lista-nao-ordenada">Lista não ordenada</h2>
+    <small><a href="#inicio">voltar</a></small>
+    <br>
+
+    <ul><!-- Lista não ordenada -->
+        <li>Home</li>
+        <li>Nossos Serviços</li>
+        <li>Quem Somos</li>
+        <li>Contato</li>
+    </ul>
+
+    <ul type="circle"><!-- muda o marcador. pode usar type="square" para colocar um quadrado, ou type="disc" para um disco -->
+        <li>Home</li>
+        <li>Nossos Serviços</li>
+        <li>Quem Somos</li>
+        <li>Contato</li>
+    </ul>
+
+    <hr>
+    <h2 id="lista-ordenada">Lista ordenada</h2>
+    <small><a href="#inicio">voltar</a></small>
+    <br>
+
+    <ol><!-- Lista Ordenada -->
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ol>
+
+    <ol type="I"><!-- o type é: 1 (numero), A (alfabeto maiusculo), a(alfabeto minusculo), i(algarismo romano minusculo), I(algarismo romano maiusculo) -->
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+    </ol>
+
+    <hr>
+    <h2 id="imagen">Imagens</h2>
+    <small><a href="#inicio">voltar</a></small>
+    <br>
+    
+    <img src="imagens/Banner (500 x 500 px).png" width="200" height="200">
+
+    <hr>
+    <h2 id="link">Links</h2>
+    <small><a href="#inicio">voltar</a></small>
+    <br>
+
+    <br>
+    <br>
+    <a href="Links/contato.html">contato</a>
+    <br>
+    <a href="testando_seu_conhecimento.html">Testando seu Conhecimento</a>
+    <br>
+    <a href="https://www.google.com.br/">Google</a>
+
+    <hr>
+    <h2 id="tabela">Tabelas</h2>
+    <small><a href="#inicio">voltar</a></small>
+    <br>
+
+    <table border="2" width="100%"><!--Tabela. border(borda), width(largura)-->
+        <tr><!--Linha da Tabela-->
+            <th>Código</th><!--Cabeçalio da Tabela-->
+            <th>Produto</th><!--Colunas-->
+            <th>Preço</th>
+        </tr>
+
+        <tr>
+            <td>001</td><!--Dados da Tabela-->
+            <td>Notebook</td>
+            <td>2.500,00</td>
+        </tr>
+
+        <tr>
+            <td>002</td>
+            <td>Tablet</td>
+            <td>999,00</td>
+        </tr>
+    
+        <tr>
+            <td rowspan="2">Desconto</td><!--rowspan(Ocupa o espaço de mais linhas)-->
+            <td colspan="2">Cupom 1: R$ -10,00</td><!--Colspan(Ocupa mais colunas)-->
+        </tr>
+
+        <tr>
+            <td colspan="2">Cupom 2: R$ -2,00</td>
+        </tr>
+
+        <tr>
+            <td>Total</td>
+            <td colspan="2">R$3.487,00</td>
+        </tr>
+    </table>
+   
+</body>
+</html>
